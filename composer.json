@@ -1,0 +1,40 @@
+{
+    "name": "sysborg/check-my-domain",
+    "description": "A lightweight Laravel package for domain ownership verification using DNS TXT records.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anderson Arruda",
+            "email": "andmarruda@gmail.com"
+        },
+        {
+            "name": "Sysborg Team",
+            "email": "contato@sysborg.com.br",
+            "homepage": "https://sysborg.com.br",
+            "role": "Maintainer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sysborg\\CheckMyDomain\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sysborg\\CheckMyDomain\\Providers\\CheckMyDomainProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.0 || ^9.0 || ^10.0 || ^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0 || ^8.0 || ^9.0",
+        "phpunit/phpunit": "^9.5 || ^10.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
